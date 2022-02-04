@@ -8,11 +8,12 @@ File storage:
 
 1. create new folder on ak-analysis following the nomenclature agreed on (date of sequencing run_sequencing platform_project/collaborator_organism_sequencing type) using cookiecutter
         - cookiecutter cookiecutter https://github.com/LisaHagenau/cookiecutter-projects-agk
-2. fill in metadata markdown template with things like sample info, Miso run ID, raw data backup folder, people responsible etc
+2. fill in README.md template with things like sample info, Miso run ID, raw data backup folder, people responsible etc
 3. copy raw data to ak-project (same project folder name) and symlink to project folder 
 4. start analysis
     - how to handle analysis steps on other servers (brain, kaput) or on local PC?
-    - copy whole folder + structure and copy back when finished? track everything on github?
+        > use the same project folder structure and rsync results when finished (take care to only add data, not delete)
+    - keep the output folders structured (e.g. bwa mem output goes into data/processed/bwa/)
 
 
 
