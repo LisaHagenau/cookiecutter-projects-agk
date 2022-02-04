@@ -14,3 +14,18 @@ File storage:
     - how to handle analysis steps on other servers (brain, kaput) or on local PC?
     - copy whole folder + structure and copy back when finished? track everything on github?
 
+
+
+├── HOWTO.md            <- this file
+├── README.md           <- all high-level information on the project (collaborators, description, samples)
+├── config              <- config files, e.g. conda environment yaml files go here
+├── data
+│   ├── intermediate    <- large intermediate data that can be deleted after analysis (e.g. bam files created during variant calling)
+│   ├── processed       <- large output data needed for later analysis or computationally heavy to re-create (e.g. vcf files, DEseq results, mapped and sorted bam)
+│   └── raw             <- the original raw data (fastq, fast5, ubam) goes here; the folder is ideally set to read-only
+├── logs                <- all log files go here
+├── metadata            <- all documents relating to the project and samples
+├── notebooks           <- R or Jupyter Notebooks detailing the data analysis steps
+├── reports             <- reports on any data analysis steps, e.g. exploratory plots, FastQC output
+│   └── figures
+└── scripts             <- scripts used this project, e.g. bash files, R or Python scripts, SLURM scripts
