@@ -16,7 +16,7 @@ File storage:
     - keep the output folders structured (e.g. bwa mem output goes into data/processed/bwa/)
 
 
-
+```
 ├── HOWTO.md            <- this file
 ├── README.md           <- all high-level information on the project (collaborators, description, samples)
 ├── config              <- config files, e.g. conda environment yaml files go here
