@@ -1,0 +1,4 @@
+# ignore the folders with large data, logs
+data/**
+logs/**
+HOWTO.md
