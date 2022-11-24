@@ -1,8 +1,8 @@
 ### Project description
-Project name:   <br>
+Project name: {{ cookiecutter.project_name }}   <br>
 Collaborators:   <br>
-Bioinformatician:    <br>
-Description:  
+Bioinformatician:  {{ cookiecutter.bioinformatician }}  <br>
+Description:  {{ project_short_description }}
 
 ### Sequencing
 Date:   <br>
