@@ -2,7 +2,7 @@
 Project name: {{ cookiecutter.project_name }}   <br>
 Collaborators:   <br>
 Bioinformatician:  {{ cookiecutter.bioinformatician }}  <br>
-Description:  {{ project_short_description }}
+Description:  {{ cookiecutter.project_short_description }}
 
 ### Sequencing
 Date:   <br>
