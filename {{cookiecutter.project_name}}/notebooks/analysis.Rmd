@@ -1,0 +1,16 @@
+---
+title: {{ cookiecutter.project_name }} 
+output:
+  html_document:
+    code_folding: hide
+    df_print: paged
+---
+
+```{r libraries, message=FALSE, warning=FALSE}
+library(tidyverse)
+```
+
+### Project description
+ {{ cookiecutter.project_short_description }}
+ 
+### Analysis
