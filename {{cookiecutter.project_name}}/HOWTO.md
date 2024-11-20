@@ -1,11 +1,15 @@
 What is the best way to start a new NGS project?
 
 File storage:
-* ak-backup: backup/archive location for raw data and finished projects (in RZ, magnetic tapes, mirrored)
+* /mnt/ak-backup: backup/archive location for raw data and finished projects (in RZ, magnetic tapes, mirrored)
 * ak-compute: server for current project analysis 
-* ak-data/projects: file storage for project data, raw data is archived separately to ak-backup, all folders inside a project except for ./data are in daily backup to /mnt/ak-backup and /mnt/daily-backup (SSD for fast recovery, but limited in size)
+* /mnt/ak-data/projects: file storage for project data, raw data is archived separately to ak-backup, all folders inside a project except for ./data are in daily backup to /mnt/ak-backup and /mnt/daily-backup (SSD for fast recovery, but limited in size)
 
+Analysis:
+* run your scripts via bash or nextflow. Use conda or docker for containers/environment. 
+* you can access RStudio Server on http://141.53.37.139:8787. Login with your user/pw. Can only run one instance for a user in a browser. Multiple users at the time are possible. 
 
+Create a new project:
 1. create new folder on ak-analysis following the nomenclature agreed on (date of sequencing run_sequencing platform_project/collaborator_organism_sequencing type) using cookiecutter
         - cookiecutter cookiecutter https://github.com/LisaHagenau/cookiecutter-projects-agk
 2. fill in README.md template with things like sample info, Miso run ID, raw data backup folder, people responsible etc
