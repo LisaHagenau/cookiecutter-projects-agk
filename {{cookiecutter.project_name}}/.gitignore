@@ -1,4 +1,7 @@
-# ignore the folders with large data, logs
+# ignore everything but notebooks and scripts
+config/**
 data/**
 logs/**
+metadata/**
+reports/**
 HOWTO.md
